@@ -1,6 +1,6 @@
-// variable: 상대 경로 상수 // 
-// : 상대 경로 상수는 /옆으로 쌓이는것 예를 들어 AUTH_PATH 다음 CS_PATH 가 되면 /auth/cs
+// variable: 상대 경로 상수 //
 export const ROOT_PATH = '/';
+
 export const AUTH_PATH = '/auth';
 
 export const CS_PATH = '/cs';
@@ -13,16 +13,17 @@ export const MM_PATH = '/mm';
 export const HR_PATH = '/hr';
 export const HR_DETAIL_PATH = (userId: string) => `${userId}`;
 
-export const SNS_SUCCESS_PATH = '//sns-success';
+export const SNS_SUCCESS_PATH = '/sns-success';
 export const OTHERS_PATH = '*';
 
 // variable: 절대 경로 상수 //
-export const ROOT_ABSOLUTE_PATH = '/';
-export const AUTH_ABSOLUTE_PATH = '/auth';
+export const ROOT_ABSOLUTE_PATH = ROOT_PATH;
+
+export const AUTH_ABSOLUTE_PATH = AUTH_PATH;
 
 export const CS_ABSOLUTE_PATH = CS_PATH;
 export const CS_WRITE_ABSOLUTE_PATH = `${CS_PATH}/${CS_WRITE_PATH}`;
-export const CS_DETAI_ABSOLUTE_PATH = (customNumber: string | number) => `${CS_PATH}/${CS_DETAIL_PATH(customNumber)}`;
+export const CS_DETAIL_ABSOLUTE_PATH = (customNumber: string | number) => `${CS_PATH}/${CS_DETAIL_PATH(customNumber)}`;
 export const CS_UPDATE_ABSOLUTE_PATH = (customNumber: string | number) => `${CS_PATH}/${CS_UPDATE_PATH(customNumber)}`;
 
 export const MM_ABSOLUTE_PATH = MM_PATH;
@@ -30,5 +31,5 @@ export const MM_ABSOLUTE_PATH = MM_PATH;
 export const HR_ABSOLUTE_PATH = HR_PATH;
 export const HR_DETAIL_ABSOLUTE_PATH = (userId: string) => `${HR_PATH}/${HR_DETAIL_PATH(userId)}`;
 
-// variable: HTTP BEARE TOKEN COOKIE NAME //
+// variable: HTTP BEARER TOKEN COOKIE NAME //
 export const ACCESS_TOKEN = 'accessToken';

@@ -8,7 +8,7 @@ import { ACCESS_TOKEN, AUTH_ABSOLUTE_PATH, AUTH_PATH, CS_ABSOLUTE_PATH, CS_DETAI
 import CS from './views/CS';
 import CSWrite from './views/CS/Write';
 import CSDetail from './views/CS/Detail';
-import CSUpdate from './views/CS';
+import CSUpdate from './views/CS/Update';
 import MM from './views/MM';
 import HR from './views/HR';
 import HRDetail from './views/HR/Detail';
